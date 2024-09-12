@@ -48,6 +48,8 @@ That is: create the initial objects and add them to the world.</javadoc>
                 <call expression="addObject(worm9,152,251)" expression-java="addObject(worm9, 152, 251)" enable="true"/>
                 <variable type="Worm" type-java="Worm" name="worm10" value="new Worm()" value-java=" new Worm()" enable="true"/>
                 <call expression="addObject(worm10,103,372)" expression-java="addObject(worm10, 103, 372)" enable="true"/>
+                <variable type="Lobster" type-java="Lobster" name="lobster" value="new Lobster()" value-java=" new Lobster()" enable="true"/>
+                <call expression="addObject(lobster,519,13)" expression-java="addObject(lobster, 519, 13)" enable="true"/>
             </body>
         </method>
     </methods>

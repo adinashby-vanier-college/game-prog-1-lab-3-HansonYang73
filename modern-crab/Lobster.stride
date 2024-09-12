@@ -57,7 +57,7 @@
                     <ifStatements>
                         <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
                         <call expression="world.removeObject(crab)" expression-java="world.removeObject(crab)" enable="true"/>
-                        <call expression="Greenfoot.playSound(&quot;gameover2.wav&quot;)" expression-java="Greenfoot.playSound(&quot;gameover2.wav&quot;)" enable="true"/>
+                        <call expression="Greenfoot.playSound(&quot;gameover.wav&quot;)" expression-java="Greenfoot.playSound(&quot;gameover.wav&quot;)" enable="true"/>
                     </ifStatements>
                 </if>
             </body>
@@ -83,10 +83,16 @@
             <params/>
             <throws/>
             <body>
-                <if condition="Greenfoot.getRandomNumber(1000)==1" condition-java="Greenfoot.getRandomNumber(1000) == 1" enable="true">
+                <if condition="Greenfoot.getRandomNumber(5000)==1" condition-java="Greenfoot.getRandomNumber(5000) == 1" enable="true">
                     <ifStatements>
                         <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
                         <call expression="world.addObject(new Worm(),Greenfoot.getRandomNumber(560),Greenfoot.getRandomNumber(560))" expression-java="world.addObject( new Worm(), Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560))" enable="true"/>
+                    </ifStatements>
+                </if>
+                <if condition="Greenfoot.getRandomNumber(1000)==1" condition-java="Greenfoot.getRandomNumber(1000) == 1" enable="true">
+                    <ifStatements>
+                        <variable type="World" type-java="World" name="world" value="getWorld()" value-java="getWorld()" enable="true"/>
+                        <call expression="world.addObject(new Crab(),Greenfoot.getRandomNumber(560),Greenfoot.getRandomNumber(560))" expression-java="world.addObject( new Crab(), Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560))" enable="true"/>
                     </ifStatements>
                 </if>
             </body>

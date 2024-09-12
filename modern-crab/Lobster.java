@@ -51,7 +51,7 @@ public class Lobster extends Actor
         if (crab != null) {
             World world = getWorld();
             world.removeObject(crab);
-            Greenfoot.playSound("gameover2.wav");
+            Greenfoot.playSound("gameover.wav");
         }
     }
 
@@ -73,9 +73,13 @@ public class Lobster extends Actor
      */
     public void spawnWorm()
     {
-        if (Greenfoot.getRandomNumber(1000) == 1) {
+        if (Greenfoot.getRandomNumber(5000) == 1) {
             World world = getWorld();
             world.addObject( new  Worm(), Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
+        }
+        if (Greenfoot.getRandomNumber(1000) == 1) {
+            World world = getWorld();
+            world.addObject( new  Crab(), Greenfoot.getRandomNumber(560), Greenfoot.getRandomNumber(560));
         }
     }
 }
